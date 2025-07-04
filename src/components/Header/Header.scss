@@ -1,0 +1,27 @@
+@use '../../styles/index.scss';
+
+.header {
+  background-color: index.$dark-color;
+  color: index.$light-color;
+  padding: index.$spacing-unit;
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 calc(index.$spacing-unit / 2);
+
+      a {
+        color: index.$light-color;
+        text-decoration: none;
+        &:hover {
+          color: index.$primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// src/styles/_variables.scss
+
+// Colors
+$creamy-white: #F8F8F4; // Background principal, secciones limpias, tarjetas de proyectos
+$dark-gray: #333333;    // Texto principal, títulos H1-H3
+$medium-gray: #666666;  // Subtítulos, texto secundario, descripciones
+$beer-amber: #E69138;   // Botones de CTA, enlaces interactivos, iconos destacados
+$dark-bottle-green: #2C5F2D; // Encabezados de sección, fondos de bloques de contenido especial
+$warning-red: #CC0000;  // Mensajes de error, validación de formularios fallida
+$success-green: #4CAF50; // Mensajes de éxito, confirmaciones
+$pure-white: #FFFFFF;   // Texto sobre Ámbar Cerveza, Verde Botella Oscuro, Rojo de Advertencia, Verde de Éxito
+
+// Mapeo a variables existentes para compatibilidad inicial
+$primary-color: $beer-amber;
+$secondary-color: $medium-gray;
+$success-color: $success-green;
+$danger-color: $warning-red;
+$light-color: $creamy-white;
+$dark-color: $dark-bottle-green;
+
+$text-color: $dark-gray;
+$background-color: $creamy-white;
+
+// Fonts
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 1rem;
+
+// Spacing
+$spacing-unit: 1rem;
