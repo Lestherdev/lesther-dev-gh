@@ -21,7 +21,7 @@ const Contact = () => {
         <a href="https://wa.me/56946976778" target="_blank" rel="noopener noreferrer" className="contact__link">
           <FaWhatsapp /> WhatsApp
         </a>
-        <a href="https://www.linkedin.com/in/jordilesther" target="_blank" rel="noopener noreferrer" className="contact__link">
+        <a href="https://www.linkedin.com/in/jordilestherdev/" target="_blank" rel="noopener noreferrer" className="contact__link">
           <FaLinkedinIn /> LinkedIn
         </a>
       </div>
