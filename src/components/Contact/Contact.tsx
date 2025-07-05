@@ -1,5 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { MdEmail } from 'react-icons/md';
+import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import './Contact.scss';
 
 const Contact = () => {
@@ -13,24 +14,16 @@ const Contact = () => {
       transition={{ duration: 0.8 }}
     >
       <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/your_form_id" method="POST">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
-      <div className="contact__socials">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
+      <div className="contact__links">
+        <a href="mailto:jordi.lf.cb@gmail.com" className="contact__link">
+          <MdEmail /> Email
+        </a>
+        <a href="https://wa.me/56946976778" target="_blank" rel="noopener noreferrer" className="contact__link">
+          <FaWhatsapp /> WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/jordilesther" target="_blank" rel="noopener noreferrer" className="contact__link">
+          <FaLinkedinIn /> LinkedIn
+        </a>
       </div>
     </motion.section>
   );
