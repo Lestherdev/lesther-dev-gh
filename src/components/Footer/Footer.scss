@@ -1,1 +1,21 @@
-@use '../../styles/index.scss';
+@use '../../styles/index.scss' as index;
+
+.footer {
+  padding: index.$spacing-unit;
+  background-color: index.$dark-gray;
+  color: index.$pure-white;
+  text-align: center;
+
+  @include index.breakpoint(tablet) {
+    padding: index.$spacing-unit * 2;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+
+    @include index.breakpoint(tablet) {
+      font-size: 1rem;
+    }
+  }
+}

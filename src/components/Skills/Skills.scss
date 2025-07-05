@@ -1,1 +1,69 @@
-@use '../../styles/index.scss';
+@use '../../styles/index.scss' as index;
+@use "sass:color";
+
+.skills {
+  padding: index.$spacing-unit * 2 index.$spacing-unit;
+  background-color: index.$creamy-white;
+  text-align: center;
+
+  @include index.breakpoint(tablet) {
+    padding: index.$spacing-unit * 4 index.$spacing-unit * 2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: index.$spacing-unit * 2;
+    color: index.$dark-gray;
+
+    @include index.breakpoint(tablet) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: index.$spacing-unit * 1.5;
+
+    @include index.breakpoint(tablet) {
+      gap: index.$spacing-unit * 2;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+
+    @include index.breakpoint(tablet) {
+      width: 120px;
+    }
+
+    span {
+      margin-top: index.$spacing-unit * 0.5;
+      font-size: 0.9rem;
+      color: index.$medium-gray;
+
+      @include index.breakpoint(tablet) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    background-color: color.adjust(index.$medium-gray, $lightness: 40%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include index.breakpoint(tablet) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

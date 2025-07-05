@@ -1,9 +1,10 @@
+import React from 'react';
 import './Footer.scss';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; 2025 Lesther. All rights reserved.</p>
+      <p>&copy; 2025 Lester. All rights reserved.</p>
     </footer>
   );
 };

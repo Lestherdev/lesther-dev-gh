@@ -1,1 +1,97 @@
-@use '../../styles/index.scss';
+@use '../../styles/index.scss' as index;
+@use "sass:color";
+
+.contact {
+  padding: index.$spacing-unit * 2 index.$spacing-unit;
+  background-color: index.$creamy-white;
+  text-align: center;
+
+  @include index.breakpoint(tablet) {
+    padding: index.$spacing-unit * 4 index.$spacing-unit * 2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: index.$spacing-unit * 2;
+    color: index.$dark-gray;
+
+    @include index.breakpoint(tablet) {
+      font-size: 2.5rem;
+    }
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto index.$spacing-unit * 2;
+    display: flex;
+    flex-direction: column;
+    gap: index.$spacing-unit;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      margin-bottom: index.$spacing-unit * 0.5;
+      color: index.$dark-gray;
+    }
+
+    input,
+    textarea {
+      padding: index.$spacing-unit * 0.8;
+      border: 1px solid color.adjust(index.$medium-gray, $lightness: 30%);
+      border-radius: 5px;
+      font-size: 1rem;
+      color: index.$dark-gray;
+      background-color: index.$pure-white;
+    }
+
+    textarea {
+      min-height: 120px;
+
+      @include index.breakpoint(tablet) {
+        min-height: 150px;
+      }
+    }
+  }
+
+  button {
+    padding: index.$spacing-unit;
+    background-color: index.$beer-amber;
+    color: index.$pure-white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    @include index.breakpoint(tablet) {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      background-color: color.adjust(index.$beer-amber, $lightness: -10%);
+    }
+  }
+
+  &__socials {
+    margin-top: index.$spacing-unit * 2;
+
+    a {
+      margin: 0 index.$spacing-unit;
+      color: index.$beer-amber;
+      text-decoration: none;
+      font-size: 1.1rem;
+
+      @include index.breakpoint(tablet) {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

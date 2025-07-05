@@ -1,1 +1,63 @@
-@use '../../styles/index.scss';
+@use '../../styles/index.scss' as index;
+
+.services {
+  padding: index.$spacing-unit * 2 index.$spacing-unit;
+  background-color: index.$creamy-white;
+  text-align: center;
+
+  @include index.breakpoint(tablet) {
+    padding: index.$spacing-unit * 4 index.$spacing-unit * 2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: index.$spacing-unit * 2;
+    color: index.$dark-gray;
+
+    @include index.breakpoint(tablet) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: index.$spacing-unit * 1.5;
+    flex-wrap: wrap;
+
+    @include index.breakpoint(tablet) {
+      gap: index.$spacing-unit * 2;
+    }
+  }
+}
+
+.service-item {
+  max-width: 280px;
+  background-color: index.$pure-white;
+  padding: index.$spacing-unit * 1.5;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  @include index.breakpoint(tablet) {
+    max-width: 300px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: index.$spacing-unit;
+    color: index.$dark-gray;
+
+    @include index.breakpoint(tablet) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: index.$medium-gray;
+
+    @include index.breakpoint(tablet) {
+      font-size: 1.1rem;
+    }
+  }
+}
