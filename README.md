@@ -1,55 +1,55 @@
-<div align="center">
-	<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=0,2,2,2,3&height=300&section=header&text=Hi!%20i'm%20Jordi%20Lesther!🎮&desc=And%20i'm%20a%20Web%20Developer&fontSize=50&fontColor=f5f5f5&descSize=30&descAlignY=65&stroke=020202&animation=twinkling" />
-</div>
+# Portafolio Personal - Jordi Lesther
 
-### Bienvenido✨!
+Este es el código fuente del portafolio personal de Jordi Lesther, un desarrollador web. El sitio está diseñado para mostrar sus habilidades, proyectos y experiencia de una manera moderna y responsiva.
 
-<div align="left">
-Soy un desarrollador full stack con 5 años de experiencia principalmente en tecnologías basadas en Javascript. <br>
-Mi principal área de desarrollo ha sido en tiendas online utilizando la arquitectura de VTEX IO. <br>
-🧑‍💻 Desarrollador Web Full Stack con más de 5 años de experiencia. <br>
-🛒 Especialista en **VTEX IO** para eCommerce. <br>
-⚙️ Apasionado por las tecnologías basadas en **JavaScript**: <br>
-React, Next.js, Angular, Node.js, entre otras. <br>
-</div>
+## Características Principales
 
-### ✨ Un poco más sobre mí
+-   **Diseño Responsivo**: Adaptado para verse y funcionar perfectamente en dispositivos móviles, tabletas y computadoras de escritorio.
+-   **Componentes Reutilizables**: Estructura modular basada en componentes de React para facilitar el mantenimiento y la escalabilidad.
+-   **Estilos con Sass**: Utiliza Sass para una gestión de estilos eficiente, con variables, mixins y una paleta de colores definida.
+-   **Animaciones Sutiles**: Incorpora animaciones con `framer-motion` para una experiencia de usuario dinámica y atractiva.
+-   **Secciones Claras**: Incluye secciones dedicadas a la presentación (Hero), sobre mí (About), habilidades (Skills), proyectos (Projects), servicios (Services) y contacto (Contact).
+-   **Enlaces de Contacto Directos**: Permite contactar directamente a través de email, WhatsApp y LinkedIn, con iconos integrados.
 
-🔮 Me encanta la **cartomagia**  
-🎲 Fan de los **juegos de mesa**  
-🛼 Me verás rodando por ahí en **patines**  
-👻 ¡Mi Pokémon favorito es **Gengar**!
+## Tecnologías Utilizadas
 
-### 📫 Conéctate conmigo
+-   **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+-   **Vite**: Herramienta de construcción rápida para proyectos web modernos.
+-   **Sass**: Preprocesador de CSS para estilos más potentes y organizados.
+-   **Framer Motion**: Librería de React para animaciones.
+-   **React Icons**: Biblioteca de iconos para integrar fácilmente iconos populares.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Lestherdev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/Lestherdev)  
-[![Email](https://img.shields.io/badge/Email-jordi.lf.cb@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jordi.lf.cb@gmail.com)
+## Configuración y Ejecución Local
 
-###
+Para configurar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-### 🧰 Tecnologías que uso
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone https://github.com/Lestherdev/lesther-dev-gh.git
+    cd lesther-dev-gh
+    ```
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
-![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=fff)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=fff)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=fff)
-![Spring Boot](https://img.shields.io/badge/-SpringBoot-6DB33F?style=for-the-badge&logo=spring&logoColor=fff)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=fff)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=fff)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=fff)
-![VB.NET](https://img.shields.io/badge/-VB.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=fff)
-![VTEX IO](https://img.shields.io/badge/-VTEX%20IO-FF0050?style=for-the-badge&logo=vtex&logoColor=fff)
+2.  **Instalar dependencias**:
+    ```bash
+    npm install
+    ```
 
-###
+3.  **Iniciar el servidor de desarrollo**:
+    ```bash
+    npm run dev
+    ```
+    Esto iniciará la aplicación en modo de desarrollo, generalmente accesible en `http://localhost:5173`.
 
-<br clear="both">
+## Despliegue
 
-<div align="center">
-	<img src="https://github-readme-stats.vercel.app/api/top-langs?username=Lestherdev&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-	<img width="20px">
-	<img height="150" src="https://i.gifer.com/39Cg.gif"  />
-	
-</div>
+El proyecto está configurado para ser desplegado automáticamente en GitHub Pages. Para desplegar los cambios, simplemente ejecuta:
 
-###
+```bash
+npm run deploy
+```
+
+Este comando ejecutará el proceso de construcción (`npm run build`) y luego utilizará `gh-pages` para publicar el contenido de la carpeta `dist` en la rama `gh-pages` de tu repositorio.
+
+## Enlaces
+
+-   **Portafolio en Vivo**: [https://Lestherdev.github.io/lesther-dev-gh](https://Lestherdev.github.io/lesther-dev-gh)
